@@ -6,6 +6,46 @@
   <title>Document</title>
 </head>
 <body>
-  <p><p><p><p><p><p><p><p><p><style>body{background:#E38F66;margin:75 35;display:flex;flex-wrap:wrap}p{margin:5;background:#F7F3D7;width:100;height:40}
+  <div id=c>
+    <div class=row>
+      <p><p class="u z"><p class=u><p class=z>
+    </div>
+    <div class=row>
+      <p class="u z y"><p><p class=z><p class="u y">
+    </div>
+  </div>
+  <style>
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1A4341;
+  }
+  #c {
+    display: flex;
+    flex-direction: column;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+  p {
+    margin:10;
+    width: 50;
+    height: 50;
+    background: #998235;
+    border-radius: 50%
+  }
+  .u {
+    border-radius: 50px 50px 0px 0px;
+  }
+  .y {
+    rotate: 180deg
+  }
+  .z {
+    background: #F3AC3C;
+  }
+  </style>
 </body>
 </html>

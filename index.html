@@ -6,11 +6,15 @@
   <title>Document</title>
 </head>
 <body>
-    <div id="head">
+    <div id="head" onclick=d()>
       <div id="eyes">
-        <div class="eye">
+        <div class="eyewrap">
+          <div class="eye">
+          </div>
         </div>
-        <div class="eye">
+        <div class="eyewrap">
+          <div class="eye">
+          </div>
         </div>
       </div>
       <div id="nose">
@@ -18,7 +22,11 @@
       <div id="mouth">
       </div>
     </div>
-  
+  <script>
+    function d(e) {
+      console.log("hello")
+    }
+  </script>
   <style>
     *{
       margin: auto;
@@ -45,6 +53,11 @@
     width: 250px;
     top:-50px;
   }
+  .eyewrap {
+    background: none;
+    box-shadow: 10px 10px 15px 0px black;
+    border-radius: 50%;
+  }
   .eye {
     width: 60px;
     height: 50px;
@@ -58,9 +71,10 @@
     height: 150px;
     background: orange;
     border-radius: 50%;
-    box-shadow: 0px 0px 0px 5px black;
+    border: 5px solid black;
     position: relative;
     top: -100px;
+    box-shadow: 10px 10px 15px 0px black;
   }
   #mouth {
     width: 400px;
@@ -69,7 +83,8 @@
     border-radius: 0 0 150px 150px;
     position: relative;
     top: -100px;
-    transform: rotateX(70deg)
+    transform: rotateX(70deg);
+    box-shadow: 10px 10px 15px 0px black;
   }
   
   </style>

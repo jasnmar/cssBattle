@@ -3,17 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
 <body>
-    <div id="head" onclick=d()>
+    <div id="head">
       <div id="eyes">
         <div class="eyewrap">
           <div class="eye">
+            <div class="eyeball">
+            </div>
           </div>
         </div>
         <div class="eyewrap">
           <div class="eye">
+            <div class="eyeball">
+            </div>
           </div>
         </div>
       </div>
@@ -22,70 +27,10 @@
       <div id="mouth">
       </div>
     </div>
-  <script>
-    function d(e) {
-      console.log("hello")
-    }
+  <script src="index.js"></script>
   </script>
   <style>
-    *{
-      margin: auto;
-    }
-    body {
-      margin-top: 100px;
-      display: flex;
-    }
-    div {
-      background: red;
-  }
-  #head {
-    border-radius: 50%;
-    width: 500px;
-    height: 400px;
-    box-shadow: 10px 10px 100px black;
-  }
-  #eyes {
-    position: relative;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    background: none;
-    width: 250px;
-    top:-50px;
-  }
-  .eyewrap {
-    background: none;
-    box-shadow: 10px 10px 15px 0px black;
-    border-radius: 50%;
-  }
-  .eye {
-    width: 60px;
-    height: 50px;
-    background: black;
-    border-radius: 50%;
-    border: 40px solid white;
-    box-shadow: 0px 0px 0px 5px black;
-  }
-  #nose {
-    width: 130px;
-    height: 150px;
-    background: orange;
-    border-radius: 50%;
-    border: 5px solid black;
-    position: relative;
-    top: -100px;
-    box-shadow: 10px 10px 15px 0px black;
-  }
-  #mouth {
-    width: 400px;
-    height: 140px;
-    background: black;
-    border-radius: 0 0 150px 150px;
-    position: relative;
-    top: -100px;
-    transform: rotateX(70deg);
-    box-shadow: 10px 10px 15px 0px black;
-  }
+    
   
   </style>
 </body>

@@ -1,0 +1,66 @@
+*{
+  margin: auto;
+}
+body {
+  margin-top: 100px;
+  display: flex;
+}
+div {
+  background: red;
+}
+#head {
+border-radius: 50%;
+width: 500px;
+height: 400px;
+box-shadow: 10px 10px 100px black;
+}
+#eyes {
+position: relative;
+margin: 0 auto;
+display: flex;
+flex-direction: row;
+background: none;
+width: 250px;
+top:-50px;
+}
+.eyewrap {
+background: none;
+box-shadow: 10px 10px 15px 0px black;
+border-radius: 50%;
+}
+.eye {
+  width: 140px;
+  height: 130px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 5px black;
+}
+.eyeball {
+  background: black;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border-radius: 50%;
+  top: 50px;
+  left: 60px;
+}
+#nose {
+width: 130px;
+height: 150px;
+background: orange;
+border-radius: 50%;
+border: 5px solid black;
+position: relative;
+top: -100px;
+box-shadow: 10px 10px 15px 0px black;
+}
+#mouth {
+width: 400px;
+height: 140px;
+background: black;
+border-radius: 0 0 150px 150px;
+position: relative;
+top: -100px;
+transform: rotateX(70deg);
+box-shadow: 10px 10px 15px 0px black;
+}

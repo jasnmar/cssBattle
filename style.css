@@ -22,7 +22,7 @@ body {
 #head {
   background: red;
   border-radius: 50%;
-  width: 500px;
+  width: 100vh;
   height: 400px;
   box-shadow: 10px 10px 100px black;
 }

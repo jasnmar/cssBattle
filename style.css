@@ -1,5 +1,5 @@
 * {
-  margin: auto;
+  margin: 0 auto;
 }
 
 body {
@@ -18,7 +18,12 @@ body {
   z-index: 5;
 }
 
-
+.contain {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 150px;
+  margin-top: 10px;
+}
 #head {
   background: red;
   border-radius: 50%;

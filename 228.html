@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p b>
+  <p a>
+    <style>
+      * {
+        background: var(--b, #D2F8FF);
+        margin: 0;
+        height: var(--h, 180)
+      }
+  
+      p {
+        position: fixed;
+      }
+  
+      [a] {
+        --b: #072949;
+        top: 90;
+        left: 148;
+        width: 104;
+        clip-path: shape(from 32px 0px, line to 69% 0%, line to 69% 38%, curve to 100% 100% with 75% 77%, line to 0% 100%, curve to 32px 38% with 25% 77%, close)
+      }
+  
+      [b] {
+        border-radius: 50%;
+        width: 120;
+        --h: 120;
+        top: 30;
+        left: 140;
+        --b: #3F8090;
+      }
+    </style>
+</body>
+</html>

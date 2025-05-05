@@ -9,16 +9,20 @@
 
   <p>
   <style>
-    * {
-      margin: 0 auto;
+    body {
+      display: grid;
+      grid-template-areas: 
+        '. item .';
+      width: 100vw;
+      height: 100vh;
+      background: black;
+      place-items: center;
     }
     p {
       width: 100px;
       height: 200px;
-      border-radius: 100px;
-      border: 10px solid black;
-      background: red
-
+      background: red;
+      grid-area: item;
     }
 
   </style>

@@ -6,35 +6,19 @@
   <title>Document</title>
 </head>
 <body>
-  <p b>
-  <p a>
+  <p>
     <style>
-      * {
-        background: var(--b, #D2F8FF);
-        margin: 0;
-        height: var(--h, 180)
+      html {
+        background: radial-gradient(1q at 50%25%, #3F8090 60px, #D2F8FF)
       }
   
       p {
-        position: fixed;
+        padding: 90 20;
+        margin: 90 140;
+        background: #072949;
+        clip-path: shape(from 30% 0%, hline to 70%, vline to 30%, curve to 100% 100% with 64% 60%, hline to 0%, curve to 30% 30% with 36% 60%)
       }
-  
-      [a] {
-        --b: #072949;
-        top: 90;
-        left: 148;
-        width: 104;
-        clip-path: shape(from 32px 0px, line to 69% 0%, line to 69% 38%, curve to 100% 100% with 75% 77%, line to 0% 100%, curve to 32px 38% with 25% 77%, close)
-      }
-  
-      [b] {
-        border-radius: 50%;
-        width: 120;
-        --h: 120;
-        top: 30;
-        left: 140;
-        --b: #3F8090;
-      }
+    </style>
     </style>
 </body>
 </html>

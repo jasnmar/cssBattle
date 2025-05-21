@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p a>
+  <p b>
+  <p c>
+    <style>
+      * {
+        background: var(--b, #2F434E);
+  
+        p {
+          position: fixed;
+          --b: #E25C57;
+        }
+  
+        [a] {
+          top: 71;
+          left: 120;
+          width: 160;
+          height: 100;
+          border-radius: 80px 80px 0 0
+        }
+  
+        [b] {
+          width: 260;
+          height: 46;
+          --b: #F3AC3C;
+          top: 151;
+          left: 70;
+          clip-path: polygon(19%0%, 81%0, 100%100%, 0 100%)
+        }
+  
+        [c] {
+          border-radius: 50%;
+          padding: 10;
+          top: 167;
+          left: 110;
+          color: #E25C57;
+          box-shadow: 80px 0, 160px 0
+        }
+    </style>
+</body>
+</html>

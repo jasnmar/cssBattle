@@ -6,36 +6,38 @@
   <title>Document</title>
 </head>
 <body>
-<p><b></b><b a></b></p>
-<p a><b></b><b a></b></p><b c>
+<p>
+<p>
+<p>
+<p>
+<p>
   <style>
     * {
       background: #F4DCBF;
-
-      body {
-        padding: 0 102
-      }
-    }
-
-    b {
-      display: inline-block;
-      padding: 60 30;
-      background: #D95362;
-      margin: 7 15;
-      border-radius: var(--r, 0 60px)
-    }
-
-    [a] {
-      scale: 1-1
-    }
-
-    [c] {
       position: fixed;
-      padding: 15;
-      top: 128;
-      left: 170;
-      --r: 0
-    }
+
+      p {
+        padding: 15 15;
+        margin: var(--m, 127 177);
+        background: #D95362;
+
+        +p {
+          padding: 60 30;
+          --m: 7 117;
+          border-radius: 0 66q;
+
+          +p {
+            scale: -1 1;
+            --m: 7 207;
+
+            +p {
+              scale: -1-1;
+              --m: 157 207;
+
+              +p {
+                scale: 1-1;
+                --m: 157 117;
+              }
   </style>
 </body>
 </html>

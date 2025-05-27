@@ -6,26 +6,25 @@
   <title>Document</title>
 </head>
 <body>
-  <p>
-  <p a>
-    <style>
+<p>
+<p>
+  <style>
+    * {
+      background: var(--b, radial-gradient(1q, #3F4869 44q 64q, #F4DA64 64q 85q, #3F4869 0));
+
       * {
-        background: radial-gradient(1q, #3F4869 40px 60px, #F4DA64 60px 80px, #3F4869 0);
-  
-        * {
-          background: radial-gradient(1q, #F4DA64 40px, #0000 0), conic-gradient(from -135deg, #3F4869 90deg, #0000 0)
-        }
+        --b: radial-gradient(1q, #F4DA64 42q, #0000 0), conic-gradient(from -135deg, #3F4869 90deg, #0000 0)
       }
-  
-      p {
-        position: fixed;
-        top: 124;
-        left: 100;
-        padding: 10 40;
-        background: #F4DA64;
-      }
-  
-      [a] {
+    }
+
+    p {
+      position: fixed;
+      top: 124;
+      left: 100;
+      padding: 10 40;
+      --b: #F4DA64;
+
+      +p {
         left: 260;
         padding: 10 20
       }

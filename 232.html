@@ -6,49 +6,46 @@
   <title>Document</title>
 </head>
 <body>
-  <p>
-  <p a>
-  <p b>
-  <p c>
-  <p d>
-    <style>
-      * {
-        background: var(--b, #FDFFE9)
-      }
-  
-      p {
+<p>
+<p>
+<p>
+<p>
+<p>
+  <style>
+    * {
+      background: var(--b, #FDFFE9);
+      position: fixed;
+    }
+
+    p {
+      border-radius: var(--r, 0 44q);
+      padding: var(--p, 20 30);
+      margin: var(--m, 142 162);
+      border: var(--l, 22q solid#01385E);
+
+      +p {
         --b: #01385E;
-        border-radius: var(--r, 0)
-      }
-  
-      [a] {
-        margin: 150 150 0 162;
-        padding: 20 40;
-        border: solid#01385E;
-        --b: #FDFFE9;
-        --r: 0 40px 0 0;
-        border-width: 20 20 20 0
-      }
-  
-      [b] {
-        padding: 10;
-        margin: -60 212 0 142;
+        --m: 42 172;
+        --p: 20;
         --r: 50%;
-        border: 20px solid #81CAFE;
-        box-shadow: 0 0 0 20px #01385E
-      }
-  
-      [c] {
-        padding: 20;
-        margin: -180 172 0 172;
-        --r: 50%
-      }
-  
-      [d] {
-        padding: 30 20;
-        margin: 0 180 0 172;
-        color: #01385E;
-        box-shadow: -40px 10px 0-10px, -40px 30px 0-10px
+        --l:;
+
+        +p {
+          --r: 0;
+          --p: 30 20;
+          --m: 82 172;
+
+          +p {
+            --p: 30 10;
+            --m: 102 142;
+
+            +p {
+              --m: 162 194 0 142;
+              color: #01385E;
+              --r: 50%;
+              --p: 10;
+              --l: 22q solid#81CAFE;
+              box-shadow: 0 0 0 21q
       }
     </style>
 </body>

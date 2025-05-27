@@ -6,8 +6,8 @@
   <title>Document</title>
 </head>
 <body>
-  <p a>
-  <p b>
+  <p>
+  <p>
     <style>
       * {
         background: #EDDF5A;
@@ -17,22 +17,19 @@
       p {
         background: #C53025;
         height: 40;
-        width: 400;
-        position: fixed;
+        width: 400
       }
   
-      [a] {
-        top: 130;
-        box-shadow: 260px 80px, 260px -80px, -260px 80px, -260px -80px;
-        color: #C53025
-      }
+      p {
+        margin: 130 0;
+        box-shadow: 275q 85q, 275q -85q, -275q 85q, -275q -85q;
+        color: #C53025;
   
-      [b] {
-        width: 40;
-        height: 200;
-        left: 180;
-        top: 50
-      }
+        +p {
+          width: 40;
+          height: 200;
+          margin: -250 180
+        }}
     </style>
 </body>
 </html>

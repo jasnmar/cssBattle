@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p>
+  <p>
+  <p>
+    <style>
+      * {
+        margin: 0;
+        background: var(--b, #FFF1C1)
+      }
+  
+      p {
+        position: fixed;
+        rotate: 45deg;
+        --b: #FE5F55;
+        padding: 100;
+        margin: 220 29;
+  
+        +p {
+          margin: 150 141;
+  
+          +p {
+            rotate: 0deg;
+            padding: 150 200;
+            margin: 0;
+            --b: radial-gradient(circle, #0000 100px, #293462 0);
+          }
+        }
+      }
+    </style>
+</body>
+</html>

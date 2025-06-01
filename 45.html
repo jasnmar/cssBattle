@@ -10,30 +10,37 @@
   <p>
   <p>
   <p>
+  <p>
     <style>
       * {
         background: #1A4341;
         position: fixed;
   
         p {
-          background: #F3AC3C;
-          padding: 200;
-          top: -266;
-          left: -200;
-          border-radius: 100px;
+          background: #0000;
+          border: 30px solid#998235;
+          padding: var(--p, 100 45);
+          margin: -118 117;
   
           +p {
-            left: 200;
+            --p: 0 135;
+            margin: 232 52 120 57;
+            border-width: 30px 0 0 0;
   
             +p {
-              top: 134;
+              margin: -58 57;
+              border: 30px#F3AC3C solid;
+              --p: 100 45;
   
               +p {
-                left: -200
+                margin: -58 177;
+  
+                +p {
+                  --p: 200;
+                }
               }
             }
           }
-
         }
       }
     </style>

@@ -12,32 +12,31 @@
   <p>
     <style>
       * {
-        background: #998235;
-        position: fixed;
+        background: var(--b, #191919);
   
         p {
-          padding: 50 40;
-          background: #1A4341;
-          border-radius: 0 50px;
-          margin: 52 102;
+          --b: #F9E492;
+          padding: 25 50;
+          border-radius: 52q 52q 0 0;
+          margin: var(--m, 100 3in 0 92);
   
           +p {
-            scale: 1-1;
-            margin: 132 0 0 202;
+            scale: -1;
+            --m: 0 3in 0 192;
   
             +p {
-              background: #F3AC3C;
-              padding: 30 40;
-              margin: 52 0 0 202;
+              --b: #4F77FF;
+              rotate: -90deg;
+              --m: -125 3in 0 167;
   
               +p {
-                margin: 172 102;scale:-1;
+                scale: 1;
+                --m: 50 3in 0 117;
               }
             }
           }
         }
       }
     </style>
-
 </body>
 </html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p>
+  <p>
+  <p>
+  <p>
+    <style>
+      * {
+        background: #191919;
+        margin: var(--m, 0);
+  
+        p {
+          background: repeating-linear-gradient(#5DBCF9 0, #5DBCF9 42q, #191919 0, #191919 159q);
+          border: 11q solid #5DBCF9;
+          padding: 300 70;
+          --m: -130 290 0 45;
+  
+          +p {
+            --m: -570 60 0 195;
+  
+            +p {
+              --m: -620 345 0-200;
+  
+              +p {
+                --m: -670-20 0 345;
+              }
+            }
+          }
+        }
+      }
+    </style>
+
+</body>
+</html>

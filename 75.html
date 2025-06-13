@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+    <style>
+      * {
+        background: var(--b, #191919);
+  
+        p {
+          position: fixed;
+          --b: #000;
+          padding: var(--p, 5 10);
+          margin: var(--m, 67 300 0 137);
+          border-radius: var(--r, 50%);
+          border: 5px solid #FE5F55;
+          rotate: 45deg;
+  
+          +p {
+            rotate: -45deg;
+            --m: 67 0 0 217;
+  
+            +p {
+              border-color: #000;
+              --m: 162 0 0 137;
+              z-index: 5;
+  
+              +p {
+                rotate: 45deg;
+                --m: 162 0 0 217;
+  
+                +p {
+                  rotate: 0deg;
+                  border: none;
+                  --p: 5px;
+                  --m: 117 300 0 152;
+  
+                  +p {
+                    --m: 117 300 0 222;
+  
+                    +p {
+                      z-index: 0;
+                      --p: 84 65;
+                      --b: #FE5F55;
+                      --m: 67 0 0 127;
+                      --r: 60px;
+  
+                      +p {
+                        --b: #A64942;
+                        --p: 50 75;
+                        --r: 60px 60px 50px 50px;
+                        --m: 137 0 0 117;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    </style>
+</body>
+</html>

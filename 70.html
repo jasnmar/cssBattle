@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p>
+  <p>
+  <p>
+  <p>
+    <style>
+      * {
+        background: var(--b, #293462);
+        position: fixed;
+  
+        p {
+          --b: radial-gradient(circle at 80q -130px, #FE5F55 212q, #A64942 0);
+          padding: 50 75;
+          margin: 102 117;
+          border-radius: 53q;
+  
+          +p {
+            padding: 5;
+            --b: #293462;
+            margin: 152 177;
+            box-shadow: 21q 0#293462;
+  
+            +p {
+              --b: #293462;
+              margin: 87 142;
+              border: 11q solid#FFF1C1;
+              box-shadow: 0 0 0 11q#FE5F55;
+  
+              +p {
+                margin: 87 212;
+              }
+            }
+          }
+        }
+      }
+    </style>
+</body>
+</html>

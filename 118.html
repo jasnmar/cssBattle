@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p>
+  <p>
+  <p>
+    <style>
+      * {
+        background: var(--b, #000);
+  
+        p {
+          position: fixed;
+          --b: #fff;
+          padding: 25 10;
+          margin: 100 72;
+          color: #fff;
+          box-shadow: var(--s, 110px 40px, 220px 40px, 220px 0);
+  
+          +p {
+            --b: #AF067C;
+            padding: 10 150;
+            border-radius: 10px;
+            margin: 82 42;
+            --s: 0 100px #AF067C;
+  
+            +p {
+              --s: 0 0;
+              rotate: -4deg;
+              margin: 132 42;
+            }
+          }
+        }
+      }
+    </style>
+</body>
+</html>

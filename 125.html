@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+    <style>
+      * {
+        background: var(--b, #EFF2F1);
+  
+        p {
+          position: fixed;
+          --b: #1C1C1C;
+          padding: var(--p, 10);
+          margin: var(--m, 52 102);
+          clip-path: var(--c, polygon(0 0, 100% 0, 100%100%, 0 45%));
+  
+          +p {
+            scale: 1 -1;
+            --m: 212 102;
+  
+            +p {
+              scale: -1;
+              --m: 212 162;
+  
+              +p {
+                --p: 10 12;
+                --c: polygon(0 0, 100%0, 100%100%, 0 30%);
+                --m: 212 258;
+  
+                +p {
+                  --c: none;
+                  --p: 90 20;
+                  --m: 52 122;
+  
+                  +p {
+                    scale: 1;
+                    --p: 45 46;
+                    --m: 52 160;
+                    border-radius: 0 60px 60px 0;
+  
+                    +p {
+                      --p: 30 25;
+                      --m: 67 162;
+                      --b: #EFF2F1;
+  
+                      +p {
+                        --b: #1C1C1C;
+                        border-radius: 0;
+                        --p: 46 44;
+                        --m: 140 170;
+                        --c: polygon(0 0, 53%0, 100%78%, 100%100%, 61%100%);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    </style>
+</body>
+</html>

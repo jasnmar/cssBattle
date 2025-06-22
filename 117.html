@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+    <style>
+      p {
+        position: fixed;
+        background: var(--b, #2E2926);
+        padding: var(--p, 90 108);
+        margin: var(--m, 52 105 0 84);
+        clip-path: var(--c, polygon(84px 0, 132px 0, 100% 100%, 172px 100%, 50% 42px, 44px 100%, 0 100%));
+  
+        +p {
+          --b: #FFF;
+          --c: none;
+          --m: 120 220;
+          --p: 30 18;
+          rotate: 45deg;
+  
+          +p {
+            rotate: -45deg;
+            --m: 120 128;
+  
+            +p {
+              rotate: 0deg;
+              --p: 90 108;
+              --b: #0088CA;
+              --m: 61 112;
+              --c: polygon(0 40px, 80px 120px, 200px 0, 200px 28px, 80px 148px, 0 68px);
+  
+              +p {
+                border-radius: 50%;
+                --c: none;
+                --p: 11;
+                --m: 131 181;
+              }
+            }
+          }
+        }
+      }
+    </style>
+</body>
+</html>

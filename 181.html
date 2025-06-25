@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p>
+  <p>
+  <p>
+  <p>
+    <style>
+      * {
+        background: #DE3832;
+        margin: var(--m, 0);
+  
+        p {
+          position: fixed;
+          padding: 100 110;
+          border: 15px solid white;
+          background: #33499F;
+          --m: -105 0 50-125;
+  
+          +p {
+            --m: -105 0 0 175;
+  
+            +p {
+              --m: 175;
+  
+              +p {
+                --m: 175 0 0-125;
+              }
+            }
+          }
+        }
+      }
+    </style>
+</body>
+</html>

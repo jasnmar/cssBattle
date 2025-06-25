@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+    <style>
+      * {
+        background: var(--b, #62306D);
+  
+        p {
+          --b: #F7EC7D;
+          position: fixed;
+          padding: var(--p, 12.5 70);
+          margin: var(--m, 212 122);
+          border-radius: var(--r, 20px 20px 10px 10px);
+  
+          +p {
+            --p: 5 54;
+            --m: 197 138;
+            --r: 5px;
+  
+            +p {
+              --m: 112 162;
+              --p: 5 30;
+  
+              +p {
+                --p: 20 45;
+                --r: 5px 5px 10px 10px;
+                --m: 67 147;
+  
+                +p {
+                  --p: 20 5;
+                  --r: 10px;
+                  --m: 47 147;
+                  color: #F7EC7D;
+                  box-shadow: var(--s, 40px 0, 80px 0);
+  
+                  +p {
+                    --b: radial-gradient(1q at -46px 12px, #62306D 70px, #0000), radial-gradient(1q at 134px 12px, #62306D 70px, #0000), #F7EC7D;
+                    --p: 32.5 44;
+                    --r: 0;
+                    --m: 127 148;
+                    --s: 0 0;
+  
+                    +p {
+                      --b: #62306D;
+                      --p: 28 15;
+                      --r: 5px;
+                      --m: 36 157;
+                      --s: 40px 0#62306D;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    </style>
+</body>
+</html>

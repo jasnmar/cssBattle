@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p>
+  <p>
+  <p>
+    <style>
+      * {
+        background: #243D83;
+  
+        p {
+          position: fixed;
+          padding: 52;
+          background: #D9D9D9;
+          border-radius: var(--r, 50%50% 0 50%);
+          margin: 76 30;
+          -webkit-box-reflect: var(--w, right 116px);
+  
+          +p {
+            scale: -.64-.64;
+            margin: 123 232;
+            --w: right 184px;
+  
+            +p {
+              scale: 1;
+              padding: 10px;
+              --r: 50%;
+              margin: 118 154;
+              --w: right 36px;
+            }
+          }
+        }
+      }
+    </style>
+</body>
+</html>

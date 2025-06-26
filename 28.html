@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p>
+  <p a b>
+  <p b>
+  <p a>
+  <p a b c>
+  <p>
+  <p a>
+  <p b c>
+    <style>
+      * {
+        background: var(--b, #1A4341);
+  
+        body {
+          display: flex;
+          margin: 90 70;
+          flex-wrap: wrap;
+          gap: 20px;
+  
+          p {
+            margin: 0 0;
+            width: 50;
+            height: 50;
+            --b: #998235;
+            border-radius: var(--r, 50%);
+          }
+  
+          [a] {
+            --b: #F3AC3C
+          }
+  
+          [b] {
+            --r: 50%50%0 0
+          }
+  
+          [c] {
+            rotate: 180deg;
+          }
+        }
+      }
+    </style>
+</body>
+</html>

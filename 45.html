@@ -9,36 +9,29 @@
   <p>
   <p>
   <p>
-  <p>
-  <p>
     <style>
       * {
-        background: #1A4341;
-        position: fixed;
+        background: var(--b, #1A4341);
+        margin: var(--m, 0);
   
         p {
-          background: #0000;
-          border: 30px solid#998235;
-          padding: var(--p, 100 45);
-          margin: -118 117;
+          --b: #1A4341;
+          padding: 60 10;
+          --m: -30 125;
+          border: 32q solid#998235;
+          box-shadow: 0 0 0 32q#1A4341, 0 0 0 64q#F3AC3C;
   
           +p {
-            --p: 0 135;
-            margin: 232 52 120 57;
-            border-width: 30px 0 0 0;
+            border: 0;
+            padding: 15 90;
+            box-shadow: 0 0;
+            --b: #998235;
+            --m: 120 65;
   
             +p {
-              margin: -58 57;
-              border: 30px#F3AC3C solid;
-              --p: 100 45;
-  
-              +p {
-                margin: -58 177;
-  
-                +p {
-                  --p: 200;
-                }
-              }
+              padding: 300 15;
+              --m: -400 185;
+              --b: #F3AC3C;
             }
           }
         }

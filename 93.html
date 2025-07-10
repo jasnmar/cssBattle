@@ -6,51 +6,54 @@
   <title>Document</title>
 </head>
 <body>
-  <p>
-  <p>
-  <p>
-  <p>
-  <p>
-    <style>
-      * {
-        background: var(--b, #191919)
-      }
-  
+<p>
+<p>
+<p>
+<p>
+<p>
+  <style>
+    * {
+      background: var(--b, #191919);
+
       p {
         position: fixed;
-        padding: var(--p, 6.5 20);
-        --b: #D6B73F;
-        margin: var(--m, 160 180);
-        rotate: -33deg;
-        color: #D6B73F;
-        box-shadow: -10px 22px, -25px 44px;
-  
+        padding: var(--p, 8 50);
+        --b: #F9E492;
+        margin: var(--m, 164 92);
+        color: #F9E492;
+        box-shadow: 0 26px, 0 52px;
+
         +p {
-          border-radius: var(--r, 50%);
-          box-shadow: none;
-          rotate: 0deg;
-          --m: 82 132;
-          --b: #F9E492;
-          --p: 20;
-  
+          --p: 8 50;
+          --m: 151 212;
+
           +p {
-            --r: 0;
-            --m: 164 -8;
-            --b: linear-gradient(#F9E492 16px, #191919 0 26px, #F9E492 0 42px, #191919 0 52px, #F9E492 0 68px, #191919 0 78px);
-            --p: 49 100;
-  
+            color: #D6B73F;
+            --p: 8 10;
+            --b: #D6B73F;
+            --m: 157 192;
+            transform: skewY(-33deg);
+
             +p {
-              --m: 151 212;
-  
+              --b: #F9E492;
+              border-radius: 50%;
+              transform: none;
+              --p: 20;
+              box-shadow: 0 0;
+              --m: 82 132;
+
               +p {
-                --b: radial-gradient(circle, #0000 100px, #4F77FF 0);
                 --m: -8;
+                border-radius: 0;
                 --p: 150 200;
+                --b: radial-gradient(1q, #0000 100px, #4F77FF);
               }
             }
           }
         }
       }
+    }
+  </style>
     </style>
 </body>
 </html>

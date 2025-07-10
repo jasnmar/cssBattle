@@ -11,61 +11,44 @@
   <p>
   <p>
   <p>
-  <p>
-  <p>
-  <p>
-  <p>
     <style>
       * {
         background: var(--b, #1A4341);
   
-        p {
-          position: fixed;
-          padding: var(--p, 50);
-          --b: #F3AC3C;
-          margin: var(--m, 102 142);
+        * {
+          --b: linear-gradient(#F3AC3C 39%, #998235 0);
+          margin: var(--m, 110 150 50);
           border-radius: var(--r, 20px);
+          box-shadow: var(--s, 0-90px 0-40px#F3AC3C);
   
-          +p {
-            --p: 25;
-            --m: 82 167;
-            --r: 10px;
+          p {
+            --b: #998235;
+            position: fixed;
+            --r: 50%;
+            padding: var(--p, 25px);
+            rotate: 180deg;
+            --m: 30 0;
+            --s: -50px 0#F3AC3C;
   
             +p {
-              --p: 30 10;
-              --m: 50 182;
+              --p: 10;
+              --m: -10 130;
+              --s: 0px -30px#998235;
   
               +p {
                 --p: 10 75;
-                --m: 42 142;
+                --r: 10px;
+                --b: #F3AC3C;
+                --s: 0 0;
+                --m: -60 0;
   
                 +p {
                   --p: 20 10;
-                  left: 138;
+                  --m: -60 130;
   
                   +p {
-                    --b: #998235;
-                    --p: 55 25;
-                    --m: 132 12;
-                    --r: 25px 25px 0 20px;
-  
-                    +p {
-                      --b: radial-gradient(circle at 50%-6%, #0000 25px, #998235 0);
-                      --p: 40 25;
-                      --r: 0 0 20px 0;
-                      --m: 162 62;
-  
-                      +p {
-                        --b: #998235;
-                        --r: 50%;
-                        --p: 10;
-                        --m: 92 142;
-  
-                        +p {
-                          top: 38;
-                        }
-                      }
-                    }
+                    --p: 25;
+                    --m: -20 25;
                   }
                 }
               }

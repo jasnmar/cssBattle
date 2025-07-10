@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p>
+  <p>
+  <p>
+    <style>
+      * {
+        background: #EFF8FE;
+  
+        * {
+          border: solid#4F77FF;
+          border-width: 0 0 10 10;
+          margin: 50 50 40 40;
+  
+          p {
+            --l: 40;
+            --h: 150;
+            position: fixed;
+            width: 60;
+            border: 0;
+            background: #4F77FF;
+            height: var(--h);
+            bottom: 0;
+            left: var(--l);
+  
+            +p {
+              --l: 130;
+              --h: 210;
+  
+              +p {
+                --l: 220;
+                --h: 110;
+              }
+            }
+          }
+        }
+      }
+    </style>
+</body>
+</html>

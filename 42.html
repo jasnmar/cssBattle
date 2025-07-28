@@ -6,33 +6,30 @@
   <title>Document</title>
 </head>
 <body>
-  <p>
-  <p>
-  <p>
-    <style>
-      * {
-        background: var(--b, #293462);
-  
-        p {
-          margin: 50 200 50 92;
-          border-radius: var(--r, 106q 0 0 53q);
-          --b: radial-gradient(circle at 50% 0, #FFF1C1 53q, #0000 0), radial-gradient(circle at 50% 60%, #FFF1C1 32q, #FE5F55 0), #FE5F55;
-          padding: 100 50;
-  
-          +p {
-            scale: -1 1;
-            margin: -250 92 50 192;
-  
-            +p {
-              padding: 5;
-              --b: #FFF1C1;
-              margin: -80 172;
-              --r: 5q;
-              }
-          }
-        }
-      }
-    </style>
+<p><p>
+<style>
+* {
+  background: var(--b, #293462);
+  * {
+    margin: 50 200 50 100;
+    --b: radial-gradient(1Q at 50% 30vw, #fff1c1 30px, transparent),
+      radial-gradient(1Q at 50% 0, #fff1c1 53Q, #fe5f55);
+    border-radius: var(--r, 25vw 0 0 53Q);
+    p {
+      position: fixed;
+      scale: -1 1;
+      margin: 0 100;
+      padding: 100 50;
+    }
+    + p {
+      --b: #fff1c1;
+      margin: 170 80;
+      padding: 5 20;
+      --r: 11Q;
+    }
+  }
+}
+</style>
   
 </body>
 </html>

@@ -6,42 +6,34 @@
   <title>Document</title>
 </head>
 <body>
-  <div>
-    <p>
-    <p>
-  </div>
-  <div>
-    <p>
-    <p>
-  </div>
+<p>
+<p>
+<p>
   <style>
     * {
       background: var(--b, #222);
-      position: fixed;
-  
-      div {
-        rotate: 45deg;
-        margin: 43 0 0 198;
+
+      p {
+        position: fixed;
+        padding: 40 14.8;
         --b: #F2994A;
-  
-        p {
-          padding: 50 15;
-          --b: inherit;
-          border-radius: var(--r, 0 0 0 10px);
-  
+        rotate: 45deg;
+        margin: 53 154;
+        color: 2D9CDB;
+        box-shadow: 25vw 38px;
+
+        +p {
+          rotate: -45deg;
+          border-radius: var(--r, 10px 0 5px 0);
+          margin: 102 140;
+          box-shadow: 0 0;
+
           +p {
-            rotate: 90deg;
-            --r: 5px 0 0 0;
-            margin: 76 39;
-            padding: 25 15;
+            margin: 101 213;
+            --b: #2D9CDB;
+            --r: 5px 0 10px 0;
           }
         }
-  
-        +div {
-          --b: #2D9CDB;
-          rotate: 225deg;
-          margin: 240 0 0 184;
-          }
       }
     }
   </style>

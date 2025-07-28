@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p a>
+  <p>
+  <p>
+  <p a>
+    <style>
+      * {
+        background: var(--b, #F2F2B6);
+  
+        [a] {
+          --b: #FD4602
+        }
+  
+        p {
+          --b: #FF6D00;
+          position: fixed;
+          margin: 77 72;
+          padding: 65 75;
+          clip-path: polygon(0 0, 100% 0, 50% 100%);
+  
+          +p {
+            margin: 77 52;
+  
+            +p {
+              rotate: 180deg;
+              margin: 77 182;
+  
+              +p {
+                margin: 77 162;
+              }
+            }
+          }
+        }
+      }
+    </style>
+</body>
+</html>

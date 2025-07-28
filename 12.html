@@ -7,41 +7,42 @@
 </head>
 <body>
   <p>
-  <p a>
-  <p b>
-  <p c>
+  <p>
+  <p>
+  <p>
+  <p>
     <style>
       * {
         background: #F5D6B4;
-        position: fixed;
-      }
   
-      p {
-        margin: 92 62;
-        padding: 30;
-        background: #0000;
-        border-radius: 50%;
-        border: 20px solid;
-        border-color: #0000#D86F45#D86F45#0000;
-        rotate: 45deg;
-      }
+        p {
+          background: #0000;
+          position: fixed;
+          padding: 30;
+          border: 5vw solid;
+          border-color: #D86F45#D86F45#0000#0000;
+          rotate: -45deg;
+          border-radius: 50%;
+          margin: 92 142;
   
-      [a] {
-        rotate: 225deg;
-        left: 88;
-      }
+          +p {
+            rotate: 135deg;
+            margin: 92 62;
   
-      [b] {
-        left: 168
-      }
+            +p {
+              margin: 92 222;
   
-      [c] {
-        padding: 0;
-        border: 10px solid#D86F45;
-        top: 48;
-        color: #D86F45;
-        box-shadow: 170px -170px
+              +p {
+                border: 10px solid#D86F45;
+                padding: 0;
+                margin: 132 62;
+                box-shadow: -170px -170px#D86F45;
+              }
+            }
+          }
+        }
       }
+    </style>
   </style>
 </body>
 </html>

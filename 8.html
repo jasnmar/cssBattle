@@ -6,6 +6,42 @@
   <title>Document</title>
 </head>
 <body>
-  <p y d><p z d><p t><p y e><p z f><style>*{background:var(--b,#6592CF)}p{position:fixed;height:110;--b:#060F55;color:#060F55;border-radius:var(--r,0);box-shadow:var(--s,none);width:20}[t]{top:134;left:130;width:140;height:100;--r:0 0 70px 70px;}[y]{height:20;--r:50%;top:34;}[z]{top:44;}[d]{left:130;--s:40px 0px, 80px 0px, 120px 0px}[e]{--b:#6592CF;color:#6592CF;top:124;left:150;--s:40px 0px, 80px 0px}[f]{top:200;left:190}</style>
+<p>
+<p>
+<p>
+  <style>
+    * {
+      background: var(--b, #6592CF);
+
+      * {
+        --b: #060F55;
+        margin: 60 130 50;
+        border-radius: var(--r, 0 0 70px 70px);
+
+        p {
+          position: fixed;
+          padding: 10;
+          --r: 50%;
+          margin: -10 0;
+          --b: #060F55;
+          color: 060F55;
+          box-shadow: 40px 0, 80px 0, 120px 0, 5vw 90px#6592CF, 15vw 90px#6592CF, 25vw 90px#6592CF;
+
+          +p {
+            padding: 50 10;
+            --r: 0;
+            --b: #0000;
+            margin: -100 0;
+            color: #0000;
+
+            +p {
+              --b: #060F55;
+              margin: 150 60;
+            }
+          }
+        }
+      }
+    }
+  </style>
 </body>
 </html>

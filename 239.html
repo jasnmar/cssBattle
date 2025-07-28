@@ -12,37 +12,35 @@
 <p>
 <p>
 <p>
-<p>
   <style>
     * {
-      background: var(--b, #CEEDFF);
+      background: #CEEDFF;
 
-      p {
-        position: fixed;
-        border: 30px solid#48BF7D;
-        border-radius: var(--r, 0 0 0 130px);
-        padding: 50 250;
-        margin: var(--m, 132-3);
+      * {
+        border: 30px#48BF7D solid;
+        border-radius: var(--r, 50vw);
+        margin: var(--m, 40-100 0 5);
 
-        +p {
-          --m: 132 127;
+        p {
+          position: fixed;
+          padding: 100 300;
+          --m: -30 100;
 
           +p {
-            --m: 132 257;
+            --m: -30 230;
 
             +p {
-              border: 0;
-              --b: #CEEDFF;
               --r: 0;
-              --m: 62-50;
+              border: 0;
+              --m: -100-50;
 
               +p {
-                --r: 50%;
-                --b: #48BF7D;
+                background: #48BF7D;
                 padding: 15;
-                --m: 147-3;
-                color: 48BF7D;
-                box-shadow: 130px 0, 260px 0;
+                --m: 85-30;
+                --r: 50%;
+                color: #48BF7D;
+                box-shadow: 130px 0, 65vw 0;
               }
             }
           }

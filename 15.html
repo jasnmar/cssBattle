@@ -6,36 +6,35 @@
   <title>Document</title>
 </head>
 <body>
-  <p>
-  <p>
-  <p>
-    <style>
-      * {
-        background: #09042A;
+<p>
+<p>
+<p>
+  <style>
+    * {
+      background: var(--b, #09042A);
+
+      p {
         position: fixed;
-  
-        p {
-          margin: 67 174 0 67;
-          padding: 75px;
-          background: #7B3F61;
-          border-radius: 50%;
-  
+        border-radius: var(--r, 50%);
+        padding: 75;
+        --b: #7B3F61;
+        margin: 67;
+
+        +p {
+          --b: #E78481;
+          margin: 67 167;
+
           +p {
-            background: #E78481;
-            margin: 67 74 0 167;
-  
-            +p {
-              background: #09042A;
-              margin: 86 167;
-              padding: 56 25;
-              border-radius: 0;
-              clip-path: shape(from 50% 0%, curve to 100%50%with 100%20%, curve to 50%100%with 100%80%, curve to 0%50%with 0%80%, curve to 50%0%with 0%20%);
-            }
+            --b: #09042A;
+            padding: 40 40;
+            --r: 95% 0;
+            margin: 102 152;
+            rotate: -45deg;
           }
         }
       }
-    </style>
-  </p>
+    }
+  </style>
 
 </body>
 </html>

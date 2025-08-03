@@ -6,59 +6,39 @@
   <title>Document</title>
 </head>
 <body>
-  <p>
-  <p>
-  <p>
-  <p>
-  <p>
-  <p>
-  <p>
-    <style>
-      * {
-        background: var(--b, #1A4341);
-  
-        p {
-          --b: #F3AC3C;
-          margin: var(--m, 100 142);
-          padding: var(--p, 50);
-          border-radius: var(--r, 50%);
-  
-          +p {
-            --b: #F3AC3C;
-            --m: -250 220 0 187;
-            --p: 90 5;
-            --r: 6px;
-  
-            +p {
-              rotate: 60deg;
-              --m: -175 212 0 196;
-  
-              +p {
-                rotate: -60deg;
-                --m: -170 212 0 196;
-  
-                +p {
-                  rotate: 0deg;
-                  --r: 50%;
-                  --b: #998235;
-                  --p: 15;
-                  --m: -125 192 0 162;
-  
-                  +p {
-                    --p: 5;
-                    --m: -30 220 0 212;
-  
-                    +p {
-                      --p: 10;
-                      --m: 35 220 0 182;
-                    }
-                  }
-                }
-              }
-            }
-          }
+ <p><p><p><p>
+<style>
+* {
+  background: var(--b, radial-gradient(1Q, #f3ac3c 53Q, #1a4341));
+  p {
+    position: fixed;
+    --b: #f3ac3c;
+    border-radius: var(--r, 10Q);
+    padding: 90 5;
+    margin: 42 187;
+    + p {
+      rotate: 60deg;
+      margin: 47 196;
+      + p {
+        rotate: -60deg;
+        margin: 57 196;
+        + p {
+          --b: #998235;
+          --r: 50%;
+          padding: 10;
+          margin: 157 182;
+          color: #998235;
+          box-shadow:
+            9vh -35Q 0 5Q,
+            7ch -3Q 0 -5Q;
         }
       }
-    </style>
+    }
+  }
+}
+</style>
 </body>
 </html>
+
+<!-- 
+radial-gradient(1q at 185px 135px,#998235 15px,#0000),radial-gradient(1q at 200px 175px,#998235 10px,#0000),radial-gradient(1q at 225px 125px,#998235 5px,#0000), -->

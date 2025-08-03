@@ -6,33 +6,19 @@
   <title>Document</title>
 </head>
 <body>
-  <p>
-  <p>
-  <p>
-    <style>
-      * {
-        margin: 0;
-        background: var(--b, #FFF1C1)
-      }
-  
-      p {
-        position: fixed;
-        rotate: 45deg;
-        --b: #FE5F55;
-        padding: 100;
-        margin: 220 29;
-  
-        +p {
-          margin: 150 141;
-  
-          +p {
-            rotate: 0deg;
-            padding: 150 200;
-            margin: 0;
-            --b: radial-gradient(circle, #0000 100px, #293462 0);
-          }
-        }
-      }
-    </style>
+<style>
+& {
+  background: conic-gradient(
+      from 135deg at 256Q 116Q,
+      #fe5f55 90deg,
+      transparent 0
+    ),
+    conic-gradient(from 135deg at 43vh 189Q, #fe5f55 90deg, #fff1c1 0);
+  * {
+    background: radial-gradient(1Q, transparent 25vw, #293462);
+    margin: 0;
+  }
+}
+</style>
 </body>
 </html>

@@ -6,31 +6,21 @@
   <title>Document</title>
 </head>
 <body>
-  <p>
-  <p>
-  <p>
-    <style>
-      * {
-        background: var(--b, #191919);
-        position: fixed;
-  
-        p {
-          --b: #4F77FF;
-          padding: 75 100;
-          margin: 67 92 0 92;
-  
-          +p {
-            --b: #191919;
-            padding: 75 100;
-            margin: 67 92 0 92;
-            clip-path: shape(from 0 33%, line to 25%66%, line to 50%33%, line to 75%66%, line to 100%33%, line to 100%0, line to 75%33%, line to 50%0, line to 25%33%, line to 0 0);
-  
-            +p {
-              margin: 167 92 0 92;
-            }
-          }
-        }
-      }
-    </style>
+ <style>
+& {
+  background: #191919;
+  * {
+    margin: 75 100;
+    --g: conic-gradient(from 135deg, #191919 25%, transparent 0);
+    --h: conic-gradient(from 135deg, #4f77ff 25%, transparent 0);
+    --s: 25vw 50vw;
+    background:
+      var(--g) 53Q 0px / var(--s),
+      var(--h) 53Q -53Q / var(--s),
+      var(--g) 53Q -25vw / var(--s),
+      var(--h) 53Q -50vh / var(--s);
+  }
+}
+</style>
 </body>
 </html>

@@ -6,37 +6,17 @@
   <title>Document</title>
 </head>
 <body>
-  <p>
-  <p>
-  <p>
-    <style>
-      * {
-        background: var(--b, #6CB3A9);
-  
-        p {
-          position: fixed;
-          padding: 100;
-          margin: 42 92;
-          --b: linear-gradient(#D25B70 50%, #fff 0);
-          border-radius: var(--r, 50%);
-  
-          +p {
-            --r: 0;
-            padding: 10 100;
-            margin: 132 92;
-            --b: linear-gradient(90deg, #6CB3A9 10px, #781728 0 190px, #6CB3A9 0);
-  
-            +p {
-              --r: 50%;
-              --b: #F6DF96;
-              padding: 25px;
-              margin: 107 157;
-              border: 10px solid#781728;
-            }
-          }
-        }
-      }
-    </style>
+<style>
+* {
+  background: #6cb3a9;
+  * {
+    background: radial-gradient(#f6df96 26Q, #781728 0 37Q, transparent 0),
+      linear-gradient(#d25b70 45%, transparent 0 55%, #fff 0),
+      linear-gradient(90deg, transparent 5%, #781728 0 95%, transparent 0);
+    margin: 50 100;
+    border-radius: 50%;
+  }
+}
 </style>
 </body>
 </html>

@@ -6,66 +6,53 @@
   <title>Document</title>
 </head>
 <body>
-  <p>
-  <p>
-  <p>
-  <p>
-  <p>
-  <p>
-  <p>
-    <style>
-      * {
-        background: var(--b, #191919);
-        position: fixed;
-  
-        p {
-          border: 10px solid;
-          padding: var(--p, 35 20);
-          --b: #0000;
-          rotate: 60deg;
-          margin: 121 0 0 138;
-          border-color: #0000#0000#5DBCF9#5DBCF9;
-  
-          +p {
-            rotate: 120deg;
-            scale: 1-1;
-            margin: 121 186;
-  
-            +p {
+<p><p><p><p><p><p><p>
+<style>
+* {
+  background: var(--b, #191919);
+  * {
+    p {
+      position: fixed;
+      border: 11Q solid #5dbcf9;
+      border-bottom: 0;
+      padding: var(--p, 15);
+      margin: var(--m, 58 167);
+      + p {
+        --p: 27 40;
+        --m: 88 142;
+        + p {
+          border-width: 10px 10px 0 0;
+          --b: transparent;
+          rotate: 30deg;
+          --p: 24 40;
+          --m: 34% 171;
+          + p {
+            scale: -1 1;
+            rotate: -30deg;
+            --m: 137 122;
+            + p {
               rotate: 0deg;
-              --p: 40 5;
-              margin: 121 187;
-              --b: #5DBCF9;
-              border: 0;
-  
-              +p {
-                --b: #0000;
-                margin: 88 142;
-                --p: 24 40;
-                border: 10px solid;
-                border-color: #0000#5DBCF9#5DBCF9;
-  
-                +p {
-                  margin: 58 167;
-                  --p: 10 15;
-  
-                  +p {
-                    --b: #5DBCF9;
-                    --p: 5 100;
-                    margin: 186 82;
-                    border: 10px solid#191919;
-  
-                    +p {
-                      margin: 206 127;
-                      --p: 5 55
-                    }
-                  }
+              scale: 1;
+              border-color: #191919;
+              --b: #5dbcf9;
+              --p: 5 100;
+              --m: 186 92;
+              + p {
+                --p: 5 55;
+                --m: 206 137;
+                + p {
+                  --p: 33 5;
+                  border: 0;
+                  --m: 30% 187;
                 }
               }
             }
           }
         }
       }
-    </style>
+    }
+  }
+}
+</style>
 </body>
 </html>

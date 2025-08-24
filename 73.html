@@ -6,77 +6,56 @@
   <title>Document</title>
 </head>
 <body>
-  <p>
-  <p>
-  <p>
-  <p>
-  <p>
-  <p>
-  <p>
-  <p>
-    <style>
-      * {
-        background: #F3AC3C;
-  
-        p {
-          position: fixed;
-          background: #1A4341;
-          border: 10px solid #998235;
-          border-radius: 50%;
-          padding: 20;
-          margin: 57 107;
-  
-          +p {
-            margin: 57 217;
-  
-            +p {
-              background: conic-gradient(from -45deg at 50%25px, #1A4341 90deg, #0000 90deg), #998235;
-              padding: 75;
-              border-radius: 100px 100px 80px 80px;
-              margin: 67 117;
-              border: 0;
-  
-              +p {
-                border-radius: 50%;
-                background: #1A4341;
-                padding: 10px;
-                margin: 127 142;
-                box-shadow: 80px 0#1A4341;
-  
-                +p {
-                  background: #fff;
-                  padding: 20 50;
-                  margin: 162 142;
-                  border-radius: 24px 24px 60px 60px;
-                  box-shadow: none;
-  
-                  +p {
-                    background: #1A4341;
-                    border-radius: 0;
-                    padding: 10 5;
-                    margin: 152 187;
-  
-                    +p {
-                      background: #0000;
-                      padding: 10;
-                      border-radius: 50%;
-                      border: 10px solid #1A4341;
-                      margin: 152 157;
-                      rotate: 45deg;
-                      border-color: #0000 #1A4341 #1A4341 #0000;
-  
-                      +p {
-                        margin: 152 187;
-                      }
-                    }
-                  }
-                }
-              }
-            }
+<p><p><p><p>
+<style>
+* {
+  --x: #1a4341 5vw, #998235 0 32Q, transparent 0;
+  background: var(
+    --b,
+    radial-gradient(1Q at 154Q 95px, var(--x)),
+    radial-gradient(1Q at 85vh 95px, var(--x)) #f3ac3c
+  );
+  * {
+    --b: conic-gradient(from 315deg at 50% 27Q, #1a4341 25%, #998235 0);
+    margin: var(--m, 75 125);
+    border-radius: var(--r, 5em 5em 69Q 69Q);
+    p {
+      position: fixed;
+      --b: radial-gradient(
+            1Q at 35% 0,
+            transparent 11Q,
+            #1a4341 0 20px,
+            transparent
+          )
+          0 10px,
+        radial-gradient(
+            1Q at 65% 0,
+            transparent 11Q,
+            #1a4341 0 20px,
+            transparent
+          )
+          0 10px #fff;
+      padding: 20 50;
+      --r: 3vw 3vw 32Q 32Q;
+      --m: 95 25;
+      + p {
+        --r: 0;
+        padding: 15 5;
+        --m: 85 70;
+        --b: #1a4341;
+        + p {
+          --r: 50%;
+          --m: 60 25;
+          padding: 10;
+          + p {
+            --m: 60 105;
           }
         }
       }
-    </style>
+    }
+  }
+}
+</style>
 
 </body>
 </html>

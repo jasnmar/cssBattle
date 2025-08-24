@@ -6,90 +6,52 @@
   <title>Document</title>
 </head>
 <body>
-  <p>
-  <p>
-  <p>
-  <p>
-  <p>
-  <p>
-  <p>
-  <p>
-  <p>
-  <p>
-  <p>
-  <p>
-    <style>
-      * {
-        background: var(--b, #243D83);
-  
-        p {
-          position: fixed;
-          --b: #6592CF;
-          padding: var(--p, 25 30);
-          border-radius: var(--r, 50%);
-          margin: var(--m, 57 162);
-  
-          +p {
-            rotate: var(--t, 45deg);
-            --m: 77 202;
-  
-            +p {
-              --t: 315deg;
-              --m: 77 122;
-  
-              +p {
-                --t: 0deg;
-                --b: #6592CF;
-                --r: 0;
-                --m: 130 150;
-                --p: 30 40;
-  
-                +p {
-                  --b: #6592CF;
-                  --m: 100 132;
-                  --p: 15;
-                  box-shadow: var(--s, 90px 0 #6592CF);
-  
-                  +p {
-                    --s: none;
-                    --b: #243D83;
-                    --m: 130 162;
-                    --p: 18.5 30;
-                    --r: 0 0 30px 30px;
-  
-                    +p {
-                      --p: 25 30;
+<p><p><p><p><p><p><p><p><p><p>
+<style>
+* {
+  background: var(--b, #243d83);
+  p {
+    position: fixed;
+    padding: 25 30;
+    --b: #6592cf;
+    border-radius: var(--r, 50%);
+    margin: var(--m, 57 162);
+    + p {
+      rotate: var(--t, 45deg);
+      --m: 77 202;
+      + p {
+        --t: 90deg;
+        --m: 117 222;
+        + p {
+          --t: 135deg;
+          --m: 157 202;
+          + p {
+            --t: 0deg;
+            --m: 177 162;
+            + p {
+              --t: 225deg;
+              --m: 157 122;
+              + p {
+                --t: 270deg;
+                --m: 117 102;
+                + p {
+                  --t: 315deg;
+                  --m: 77 122;
+                  + p {
+                    --b: #243d83;
+                    --t: 0deg;
+                    --m: 125 142;
+                    border: 5vw solid #6592cf;
+                    border-top: 0;
+                    --r: 0 0 53Q 53Q;
+                    padding: 21 30;
+                    + p {
                       --r: 50%;
-                      --b: #6592CF;
-                      --t: 90deg;
-                      --m: 117 222;
-  
-                      +p {
-                        --t: 135deg;
-                        --m: 157 202;
-  
-                        +p {
-                          --t: 180deg;
-                          --m: 177 162;
-  
-                          +p {
-                            --t: 225deg;
-                            --m: 157 122;
-  
-                            +p {
-                              --t: 270deg;
-                              --m: 117 102;
-  
-                              +p {
-                                --b: #6592CF;
-                                --m: 122 177;
-                                --p: 5;
-                                --s: 0 20px#6592CF;
-                              }
-                            }
-                          }
-                        }
-                      }
+                      padding: 5;
+                      border: 0;
+                      --m: 122 177;
+                      --b: #6592cf;
+                      box-shadow: 20px 0 #6592cf;
                     }
                   }
                 }
@@ -98,6 +60,9 @@
           }
         }
       }
-    </style>
+    }
+  }
+}
+</style>
 </body>
 </html>

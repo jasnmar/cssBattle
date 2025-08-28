@@ -6,52 +6,28 @@
   <title>Document</title>
 </head>
 <body>
-  <p>
-  <p>
-  <p>
-  <p>
-  <p>
-  <p>
-    <style>
-      * {
-        background: #6592CF;
-  
-        p {
-          --c: #293D7E;
-          background: #0000;
-          border: 125px solid;
-          border-top-width: 100px;
-          border-color: var(--c)#0000#0000;
-          border-bottom: none;
-          margin: var(--m, 150 67);
-  
-          +p {
-            --c: #6592CF;
-            --m: -281 67;
-  
-            +p {
-              --c: #293D7E;
-              --m: 162 67;
-  
-              +p {
-                --c: #6592CF;
-                --m: -293 67;
-  
-                +p {
-                  --c: #293D7E;
-                  --m: 174 67;
-  
-                  +p {
-                    --c: #6592CF;
-                    --m: -305 67;
-                  }
-                }
-              }
-            }
-          }
-        }
+<p><p><p>
+<style>
+& {
+  background: #6592cf;
+  p {
+    padding: 55 62;
+    margin: 50 192;
+    background: linear-gradient(
+      -38.7deg,
+      transparent 90Q,
+      #293d7e 0 109px,
+      transparent 0
+    );
+    -webkit-box-reflect: left;
+    + p {
+      margin: -110 192;
+      + p {
+        margin: 50 192;
       }
-    </style>
-
+    }
+  }
+}
+</style>
 </body>
 </html>

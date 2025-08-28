@@ -6,40 +6,32 @@
   <title>Document</title>
 </head>
 <body>
-  <p>
-  <p>
-  <p>
-    <style>
-      * {
-        background: var(--b, #000);
-  
-        * {
-          --b: #37385A;
-          margin: 90 80;
-          border-radius: var(--r, 20px);
-          padding: var(--p, 10);
-  
-          p {
-            --p: 40 100;
-            margin: 10 10;
-            --r: 10px;
-            --b: linear-gradient(105deg, #9897AE 82px, #C0C3DB 0 132px, #9897AE 0);
-  
-            +p {
-              --p: 5;
-              margin: -75 185;
-              --b: #000;
-              box-shadow: 0 20px, 0 40px, -160px 0, -160px 40px, -160px 20px;
-  
-              +p {
-                box-shadow: 20px 0, 40px 0, 60px 0;
-                --p: 25 5;
-                margin: 65 250 0 75;
-              }
-            }
-          }
-        }
+<p><p>
+<style>
+* {
+  margin: var(--m, 90 80);
+  border-radius: var(--r, 5vw);
+  background: var(--b, #37385a);
+  box-shadow: var(--s, 0 0 0 9in);
+  * {
+    --b: linear-gradient(-75deg, #9897ae 87Q, #c0c3db 0 33vw, #9897ae 0);
+    --m: 20;
+    --r: 11Q;
+    padding: 10;
+    --s: 0 0;
+    p {
+      --b: #000;
+      padding: 5;
+      --m: 5 200 0 5;
+      --s: 0 5vw, 0 5ch, 40vw 0, 40vw 5vw, 40vw 40px;
+      + p {
+        padding: 25 5;
+        --m: -10 120 -10 55;
+        --s: 5vw 0, 5ch 0, 64Q 0;
       }
-    </style>
+    }
+  }
+}
+</style>
 </body>
 </html>

@@ -6,50 +6,37 @@
   <title>Document</title>
 </head>
 <body>
-  <p><p><p><p><p><p><p><style>
-  *{background:#BAC7CE;
-   p{
-     position:fixed;
-     padding: 60;
-     rotate:-15deg;
-     background:#000;
-     border-radius: 0% 50%;
-     margin:122 22;
-     +p{
-       rotate:105deg;
-       margin:122 242;
-       +p{
-         border-radius:50%;
-         rotate:0;
-         background:#868A64;
-         padding:50;
-         margin:132 252;
-         box-shadow:inset 15px -4px #5A6042;
-         +p{
-           margin: 132 32;
-           +p{
-             padding: 15;
-             box-shadow:0 0;
-             background:#4E2B24;
-             margin: 162 62;
-             border:5px solid #000;
-             +p{
-               margin: 162 282;
-               +p{
-                 border-radius:0;
-                 rotate:45deg;
-                 padding:100;
-                 border:0;
-                 background:#475862;
-                 margin:-158 92
-               }
-             }
-           }
-         }
-       }
-     }
-     
-   }}
+<p><p>
+<style>
+& {
+  background: conic-gradient(
+    from 315deg at 199.5px 91.5px,
+    #475862 25%,
+    #bac7ce 0 75%
+  );
+  p {
+    position: fixed;
+    rotate: -15deg;
+    padding: 60;
+    --x: 56px;
+    --y: 74px;
+    background: radial-gradient(
+        #4e2b24 15px,
+        #000 0 20px,
+        transparent 0 50px,
+        #000 0
+      ),
+      radial-gradient(1Q at var(--x) var(--y), #868a64 50px, #5a6042 0);
+    border-radius: 0 60px;
+    margin: 122 250 50 22;
+    + p {
+      margin: 122 27 50 242;
+      --x: 45px;
+      --y: 64px;
+      rotate: -75deg;
+    }
+  }
+}
 </style>
 </body>
 </html>

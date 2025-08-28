@@ -6,29 +6,29 @@
   <title>Document</title>
 </head>
 <body>
-  <p>
-  <p>
-    <style>
-      * {
-        background: var(--b, linear-gradient(#1E92FF 180px, #69D10A 0 220px, #6F6100 0));
-        margin: 0;
-  
-        p {
-          position: fixed;
-          --b: #441A0A;
-          padding: 50 10;
-          margin: 80 50;
-  
-          +p {
-            margin: 60 40;
-            padding: 20;
-            --b: #69D10A;
-            border-radius: 50%;
-            color: #69D10A;
-            box-shadow: 20px 20px, -20px 20px, 0 20px, 270px 90px, 270px 70px;
-          }
-        }
-      }
-    </style>
+<p><p>
+<style>
+* + * {
+  background: linear-gradient(#1e92ff 45vw, #69d10a 0 55vw, #6f6100 0);
+  p {
+    padding: 40 10;
+    background: #441a0a;
+    margin: 100 322 0 42;
+    + p {
+      border-radius: 50%;
+      padding: 20;
+      margin: -100 320 0 32;
+      color: 69D10A;
+      box-shadow:
+        -5vw 0,
+        5vw 0,
+        0 -5vw,
+        90vh 53Q,
+        90vh 74Q;
+      background: #69d10a;
+    }
+  }
+}
+</style>
 </body>
 </html>

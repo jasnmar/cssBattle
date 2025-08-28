@@ -6,28 +6,34 @@
   <title>Document</title>
 </head>
 <body>
-  <p><p><p><style>
-  *{background:#E38F66;
-   p{
-     position:fixed;
-     border:30px solid #FFFBDA;
-     padding: 60 30;
-     border-radius:0 0 60px 60px;
-     margin:72 177;
-     border-top:none;
-     +p{
-       border-color:#62306D;
-       margin:72 87;
-       +p{
-         background:#FFFBDA;
-         padding:15;
-         border:none;
-         border-radius:50%;
-         margin:61 267;
-         box-shadow:-90px 0#62306D,-180px 0#62306D;
-       }
-     }
-   }}
+<p><p>
+<style>
+& {
+  background: #e38f66;
+  * {
+    margin: 85 95 70 185;
+    border: solid #fffbda;
+    border-width: 0 30px 30px;
+    border-radius: 0 0 1in 1in;
+    p {
+      border-color: #62306d;
+      position: fixed;
+      padding: 57.5 30;
+      margin:0 0 0 -120.5;
+      + p {
+        border-radius: 50%;
+        padding: 15px;
+        background: #fffbda;
+        margin: -15 0 0 60;
+        border: 0;
+        color: 62306D;
+        box-shadow:
+          -90px 0,
+          -180px 0;
+      }
+    }
+  }
+}
 </style>
 </body>
 </html>

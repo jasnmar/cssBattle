@@ -6,61 +6,44 @@
   <title>Document</title>
 </head>
 <body>
-  <p>
-  <p>
-  <p>
-  <p>
-  <p>
-  <p>
-  <p>
-    <style>
-      & {
-        border: #54C144 solid 20px;
-        background: #000;
-  
-        p {
-          position: fixed;
-          padding: var(--p, 20 40);
-          background: var(--b, #C74E4E);
-          margin: var(--m, 32 32);
-  
-          +p {
-            --m: 32 152;
-  
-            +p {
-              --p: 20 100;
-              --m: 112 32;
-  
-              +p {
-                rotate: 90deg;
-                --m: 102 202;
-                --p: 20 90;
-  
-                +p {
-                  rotate: 0deg;
-                  --p: 5 20;
-                  --m: 172 32;
-                  --b: #54C144;
-                  box-shadow: var(--s, 10px 15px#54C144, 0 30px#54C144);
-  
-                  +p {
-                    --s: 0 0;
-                    --p: 20 10;
-                    --m: 172 42;
-  
-                    +p {
-                      --b: #fff;
-                      --p: 5;
-                      --m: 187 92;
-                      --s: 20px 0 #fff;
-                    }
-                  }
-                }
-              }
-            }
+<p><p><p><p>
+<style>
+* {
+  background: var(--b, #000);
+  border: 22Q solid #54c144;
+  * {
+    --b: #54c144;
+    margin: var(--m, 180 290 50 50);
+    padding: var(--p, 20 10);
+    position: fixed;
+    border: 0;
+    p {
+      --p: 5 20;
+      --m: -20 -20;
+      color: 54c144;
+      box-shadow: var(--s, 11Q 15px, 0px 30px);
+      + p {
+        --b: #c74e4e;
+        --p: 20 40;
+        --m: -160 -20;
+        color: c74e4e;
+        --s: 120px 0, 0 80px, 80px 80px, 120px 80px;
+        + p {
+          --b: #fff;
+          --p: 5;
+          --m: -5 40;
+          --s: 20px 0 #fff;
+          + p {
+            --b: #c74e4e;
+            --p: 90 20;
+            --s: 0 0;
+            --m: -160 220;
           }
         }
       }
-    </style>
+    }
+  }
+}
+</style>
 </body>
 </html>

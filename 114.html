@@ -6,30 +6,25 @@
   <title>Document</title>
 </head>
 <body>
-  <p>
-  <p>
-    <style>
-      * {
-        background: var(--b, #172D2C);
-  
-        p {
-          position: fixed;
-          --b: #0000;
-          padding: 0;
-          margin: 12 192;
-          border: solid;
-          border-width: 65px 0 65px 180px;
-          border-color: #0000 #0000 #0000 #E9AF53;
-  
-          +p {
-            border: 0;
-            margin: 110 12;
-            padding: 64.5 90;
-            --b: #E9AF53;
-            transform: skew(0deg, 19.8deg);
-            }
-          }
-        }
-    </style>
+<p>
+<style>
+* {
+  background: var(--b, #172d2c);
+  * {
+    --b: #e9af53;
+    margin: 117 200 52.5 20;
+    transform: skewY(19.8deg);
+    p {
+      position: fixed;
+      --b: transparent;
+      transform: skewY(-19.8deg);
+      border: solid;
+      border-color: transparent transparent transparent #e9af53;
+      border-width: 65 0 65 180;
+      margin: -162 180;
+    }
+  }
+}
+</style>
 </body>
 </html>

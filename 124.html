@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p><p><p><p>
+<style>
+* {
+  background: var(--b, #071945);
+  * {
+    margin: var(--m, 0);
+    --b: conic-gradient(from 135deg at 50% 93vh, #2ce1ea 25%, transparent 0);
+    p {
+      position: fixed;
+      padding: 5;
+      --m: 50 30;
+      --b: #b069f7;
+      color: #b069f7;
+      box-shadow:
+        5lh 0,
+        45vw 0,
+        90vh 0,
+        0 53Q #f8da37,
+        45vw 53Q #f8da37,
+        90vh 53Q #f8da37;
+      + p {
+        --m: 50 90;
+        + p {
+          padding: 5 25;
+          --m: 40;
+          + p {
+            padding: 5;
+            --b: #2ce1ea;
+            --m: 270 195;
+            color: #2ce1ea;
+            box-shadow:
+              0 10Q,
+              0 -32Q,
+              0 -64Q;
+          }
+        }
+      }
+    }
+  }
+}
+</style>
+</body>
+</html>

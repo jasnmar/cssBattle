@@ -6,30 +6,18 @@
   <title>Document</title>
 </head>
 <body>
-<p>
-<p>
-  <style>
-    * {
-      background: var(--b, #E3516E);
-
-      * {
-        --b: #FADE8B;
-        margin: 57.5 108 58 108;
-
-        p {
-          position: fixed;
-          padding: 140 15;
-          --b: #E3516E;
-          margin: -42 300 0 71;
-          rotate: 45deg;
-
-          +p {
-            rotate: -45deg;
-            margin: -42 300 0 83;
-          }
-        }
-      }
-    }
-  </style>
+<style>
+& {
+  background: #e3516e;
+  * {
+    
+    background:
+      linear-gradient(45deg, transparent 115px, #e3516e 0 145px, transparent 0),
+      linear-gradient(-45deg, transparent 115px, #e3516e 0 145px, transparent 0)
+        #fade8b;
+    margin: 58 108;
+  }
+}
+</style>
 </body>
 </html>

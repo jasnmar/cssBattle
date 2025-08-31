@@ -6,19 +6,23 @@
   <title>Document</title>
 </head>
 <body>
-  <p><p><style>
-  *{background:#998235;
-   p{rotate:45deg;
-    position:fixed;
-    background:#FCBE5C;
-    margin:106.5 130 90 146.2;
-     padding:35 70;
-     +p{
-       rotate:-45deg;
-       background:#0B2429;
-       margin:106.5 130 90 96.7
-     }
-    }}
+<p>
+<style>
+* {
+  background: var(--b, #998235);
+  * {
+    --b: #fcbe5c;
+    rotate: 45deg;
+    margin: 115 105 114 155;
+    p {
+      position: fixed;
+      rotate: 0deg;
+      padding: 70 35;
+      margin: 0;
+      --b: #0b2429;
+    }
+  }
+}
 </style>
 </body>
 </html>

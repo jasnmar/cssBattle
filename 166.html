@@ -6,58 +6,39 @@
   <title>Document</title>
 </head>
 <body>
-  <p>
-  <p>
-  <p>
-  <p>
-  <p>
-  <p>
-    <style>
-      * {
-        background: var(--b, #D86F45);
-  
-        p {
-          position: fixed;
-          --b: linear-gradient(#0000 50%, #FDFBF8 0);
-          padding: 100;
-          border-radius: 50%;
-          margin: var(--m, 62 92);
-  
-          +p {
-            padding: var(--p, 40);
-            scale: 1-1;
-            --m: 122 152;
-            -webkit-box-reflect: below 30px;
-  
-            +p {
-              --p: 15px;
-              --m: 147 92;
-              box-shadow: var(--s, 170px 0 #FDFBF8);
-  
-              +p {
-                scale: 1 -1;
-                --m: 147 122;
-                --b: #D86F45;
-                --s: 110px 0 #D86F45;
-  
-                +p {
-                  border-radius: 0;
-                  --m: -16 92;
-                  --b: #FDFBF8;
-                  --p: 60 15;
-                  --s: 170px 0 #FDFBF8;
-  
-                  +p {
-                    --p: 40;
-                    --s: 0 0;
-                    --m: -22 152;
-                  }
-                }
-              }
+<p><p><p><p><p>
+<style>
+* {
+  background: var(--b, #d86f45);
+  * {
+    --b: radial-gradient(1Q at top, #fdfbf8 25vw, transparent) 0 162px;
+    p {
+      position: fixed;
+      padding: var(--p, 40);
+      border-radius: 5ch;
+      --b: #fdfbf8;
+      margin: var(--m, 122 152);
+      + p {
+        --p: 80 40;
+        --m: -68 152;
+        + p {
+          --p: 80 15;
+          --m: -43 92;
+          box-shadow: 180Q 0 #fdfbf8;
+          + p {
+            --p: 15;
+            --m: 147 92;
+            box-shadow: 32Q 0 #d86f45;
+            + p {
+              --m: 147 262;
+              rotate: 180deg;
             }
           }
         }
       }
-    </style>
+    }
+  }
+}
+</style>
 </body>
 </html>

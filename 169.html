@@ -6,33 +6,45 @@
   <title>Document</title>
 </head>
 <body>
-  <p><p><p><style>
-  *{background:radial-gradient(1q,#4FA07B 55px,#0D1335 0 65px ,#4FA07B 0 85px,#0D1335 0 95px,#4FA07B 0 115px ,#0D1335 0 125px,#4FA07B);
-   p{
-     position:fixed;
-     --b:20px;
-     padding:118 94;
-     margin:24 37;
-     aspect-ratio: cos(30deg);
-     clip-path: polygon(
-       100% 50%,
-       0 100%,
-       0 0,
-       100% 50%,calc(100% - var(--b)) 50%,calc(var(--b)/2) calc(var(--b)*cos(30deg)), calc(var(--b)/2) calc(100% - var(--b)*cos(30deg)),calc(100% - var(--b)) 50%);
-     background:#FBFAE2;
-     +p{
-       scale:-1;
-       margin:24 159;
-       +p{
-         clip-path:none;
-         padding:9 16;
-         margin:133 178
-         
-       }
-     }
-     
-   }}
-  
+<style>
+& {
+  background: radial-gradient(
+    1Q,
+    #4fa07b 0 58Q,
+    #0d1335 0 69Q,
+    #4fa07b 0 90Q,
+    #0d1335 0 101Q,
+    #4fa07b 0 122Q,
+    #0d1335 0 132Q,
+    #4fa07b
+  );
+  * {
+    background: #fbfae2;
+    margin: 32 45;
+    clip-path: polygon(
+      0 0,
+      41mm 97px,
+      100% 0,
+      75vw 6vh,
+      55vh 109Q,
+      5cm 50%,
+      55vh 141Q,
+      75vw 231Q,
+      75vw 6vh,
+      100% 0,
+      100% 100%,
+      41mm 147Q,
+      0 100%,
+      11Q 230.7Q,
+      155Q 133px,
+      121px 50%,
+      154.5Q 103px,
+      11Q 6vh,
+      11Q 55vw,
+      0 100%
+    );
+  }
+}
 </style>
 </body>
 </html>

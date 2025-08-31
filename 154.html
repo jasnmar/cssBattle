@@ -6,37 +6,40 @@
   <title>Document</title>
 </head>
 <body>
-  <p><p><p><p><p><style>
-  *{background:#998235;
-   *{
-     background:radial-gradient(#0B2429 80px, #FCBE5C 0 95px, #0B2429 0);
-     border-radius:50%;
-     margin:45 95;
-     padding:4;
-     p{
-       padding:96 16;
-       background:#0B2429;
-       margin:4 300 0 85;
-       border-radius:0;
-       +p{
-         rotate:45deg;
-         margin:-191.5 300 0 85;
-         +p{
-           rotate:90deg;
-           +p{
-             rotate:135deg;
-             +p{
-               padding:60px;
-               rotate:0deg;
-               border-radius:50%;
-               margin:-167 300 0 31;
-               border:10px solid #FCBE5C
-             }
-           }
-         }
-       }
-     }
-   }}
+<p><p><p><p><p>
+<style>
+& {
+  background: radial-gradient(1Q, #fcbe5c 0 101Q, #0b2429 0 35vh, #998235 0);
+  * {
+    margin: 0;
+    p {
+      position: fixed;
+      background: #0b2429;
+      padding: 15 100;
+      margin: 135 100;
+      + p {
+        rotate: 90deg;
+        + p {
+          rotate: 45deg;
+          + p {
+            rotate: -45deg;
+            + p {
+              margin: 0;
+              padding: 150 200;
+              background: radial-gradient(
+                1Q,
+                #0b2429 63Q,
+                #fcbe5c 0 74Q,
+                #0b2429 0 5pc,
+                transparent 0
+              );
+            }
+          }
+        }
+      }
+    }
+  }
+}
 </style>
 </body>
 </html>

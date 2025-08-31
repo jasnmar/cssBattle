@@ -6,57 +6,42 @@
   <title>Document</title>
 </head>
 <body>
-  <p>
-  <p>
-  <p>
-  <p>
-  <p>
-  <p>
-    <style>
-      * {
-        background: var(--b, #E38F66);
-        margin: var(--m, 0);
-  
-        p {
-          position: fixed;
-          padding: var(--p, 50 50);
-          --b: #FFFBDA;
-          border-radius: var(--r, 20px);
-          --m: 120 0;
-  
-          +p {
-            --p: 50 50;
-            --m: 200 80;
-  
-            +p {
-              --r: 50% 50%0 0;
-              --b: #FFFBDA;
-              --p: 20px;
-              --m: 100 0;
-  
-              +p {
-                --m: 260 160;
-                --r: 0 50% 50% 0;
-  
-                +p {
-                  --m: 180 80;
-                  --r: 50% 50% 50% 0;
-                  box-shadow: -10px 10px #FFFBDA;
-  
-                  +p {
-                    --b: #E38F66;
-                    --p: 40px;
-                    --r: 10px;
-                    --m: 220 0;
-                    color: #E38F66;
-                    box-shadow: 120px -40px, 40px -120px;
-                  }
-                }
+<p><p><p><p><p><p><p>
+<style>
+* {
+  background: var(--b, #e38f66);
+  margin: var(--m, 0);
+  p {
+    --b: #fffbda;
+    padding: 60 20;
+    border-radius: 5vw;
+    position: fixed;
+    --m: 25% 0;
+    + p {
+      --m: 45% 80;
+      + p {
+        rotate: 90deg;
+        --m: 35% 40;
+        + p {
+          --m: 55% 120;
+          + p {
+            rotate: 0deg;
+            padding: 25;
+            --m: 170 0;
+            --b: radial-gradient(1Q at 100% 0%, #e38f66 11Q, #fffbda);
+            + p {
+              --m: 250 80;
+              + p {
+                rotate: 180deg;
+                --m: 45% 70;
               }
             }
           }
         }
       }
-    </style>
+    }
+  }
+}
+</style>
 </body>
 </html>

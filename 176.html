@@ -6,68 +6,40 @@
   <title>Document</title>
 </head>
 <body>
-  <p>
-  <p>
-  <p>
-  <p>
-  <p>
-  <p>
-  <p>
-  <p>
-    <style>
-      * {
-        background: var(--b, #A6D6AE);
-  
-        p {
-          position: fixed;
-          padding: var(--p, 40 52);
-          --b: #3A0F09;
-          margin: var(--m, 152 140);
-  
-          +p {
-            --p: 25 30;
-            --b: #BB9213;
-            --m: 182 162;
-            border-radius: 30px 30px 0 0;
-  
-            +p {
-              --p: 0;
-              --b: none;
-              border: 60px solid #0000;
-              border-bottom: 42px solid #3A0F09;
-              --m: 52 132;
-  
-              +p {
-                --p: 0;
-                --b: none;
-                border: 40px solid #0000;
-                border-bottom: 60px solid #3A0F09;
-                --m: 12 77;
-  
-                +p {
-                  --m: 12 227;
-  
-                  +p {
-                    border: none;
-                    --b: #3A0F09;
-                    --p: 70 25;
-                    --m: 92 92;
-                    color: 3A0F09;
-                    box-shadow: 150px 0;
-  
-                    +p {
-                      --b: #BB9213;
-                      --p: 12.5 10;
-                      --m: 122 107;
-                      color: BB9213;
-                    }
-                  }
-                }
-              }
-            }
+<p><p><p><p><p>
+<style>
+* {
+  background: var(--b, #a6d6ae);
+  p {
+    padding: var(--p, 60);
+    margin: var(--m, 120 92);
+    --b: conic-gradient(from 125deg at top, #3a0f09 110deg, transparent 0);
+    + p {
+      --b: #bb9213;
+      --m: -170 250 0 162;
+      --p: 25 30;
+      border-radius: 32Q 32Q 0 0;
+      + p {
+        --p: 30 40;
+        --m: -180 5in 0 77;
+        --b: conic-gradient(from 146deg at top, #3a0f09 68deg, transparent 0);
+        -webkit-box-reflect: var(--w, right 74Q);
+        + p {
+          --p: 50 25;
+          --m: -30 5in 0 92;
+          --b: #3a0f09;
+          --w: right 25vw;
+          + p {
+            --b: #bb9213;
+            --p: 12.5 10;
+            --m: -60 5in 0 107;
+            --w: right 138Q;
           }
         }
       }
-    </style>
+    }
+  }
+}
+</style>
 </body>
 </html>

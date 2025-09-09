@@ -6,35 +6,12 @@
   <title>Document</title>
 </head>
 <body>
-  <p>
-  <p>
-  <p>
-  <p>
-    <style>
-      * {
-        background: #DE3832;
-        margin: var(--m, 0);
-  
-        p {
-          position: fixed;
-          padding: 100 110;
-          border: 15px solid white;
-          background: #33499F;
-          --m: -105 0 50-125;
-  
-          +p {
-            --m: -105 0 0 175;
-  
-            +p {
-              --m: 175;
-  
-              +p {
-                --m: 175 0 0-125;
-              }
-            }
-          }
-        }
-      }
-    </style>
+<style>
+& {
+  background:
+    conic-gradient(at 5pc 45vh, #33499f 25%, transparent 0)-50vw -25px / 310px 215px,
+    conic-gradient(at 53Q 50vh, #fff 25%, transparent 0)-41mm -25px / 70vw 50vw #de3832;
+}
+</style>
 </body>
 </html>

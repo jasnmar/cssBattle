@@ -6,45 +6,51 @@
   <title>Document</title>
 </head>
 <body>
-  <p><p><p><p><p><style>
-  *{background:#ED6A9D;
-   *{
-     background:#050044;
-     border-radius:50%;
-     margin:90 110 60;
-     p{
-       position:fixed;
-       border-radius:50% 0;
-       background:#FFC100;
-       padding:20;
-       rotate:45deg;
-       margin:41 35;
-       box-shadow:50px -50px #FFC100;
-       +p{
-         rotate:0deg;
-         padding:15 5;
-         border-radius:50%;
-         background:#050044;
-         margin:45 50;
-         box-shadow: 70px 0 #050044;
-         +p{
-           border-radius:0;
-           border:31px solid #0000;
-           border-bottom:60px solid #050044;
-           padding:0;
-           rotate:-30deg;
-           margin:-58 -13;
-           background:none;
-           box-shadow:none;
-           +p{
-             rotate:30deg;
-             margin:-58 131
-           }
-         }
-       }
-       
-     }
-   }}
+<p><p><p><p><p><p>
+<style>
+& {
+  background: #ed6a9d;
+  p {
+    background: #050044;
+    border-radius: 50%;
+    padding: 75 90;
+    margin: 90 120 0 102;
+    + p {
+      padding: 14;
+      background: conic-gradient(from 315deg, #ed6a9d 25%, transparent 0);
+      margin: -54 250 0 178;
+      border-radius: 0;
+      + p {
+        background: #ffc100;
+        border-radius: 50% 0;
+        rotate: 45deg;
+        padding: 20;
+        margin: -84 240 0 136.5;
+        + p {
+          margin: -40 240 0 206.5;
+          + p {
+            background: #050044;
+            padding: 15 5;
+            border-radius: 50%;
+            rotate: 0deg;
+            margin: -35 250 0 222;
+            -webkit-box-reflect: left 60px;
+            + p {
+              padding: 32 30;
+              border-radius: 0;
+              background: conic-gradient(
+                from 183deg at 50px 00%,
+                #050044 53deg,
+                transparent 0
+              );
+              margin: -102 250 0 222;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 </style>
 </body>
 </html>

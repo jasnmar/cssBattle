@@ -6,58 +6,32 @@
   <title>Document</title>
 </head>
 <body>
-  <p>
-  <p>
-  <p>
-  <p>
-  <p>
-    <style>
-      * {
-        margin: 0;
-        background: var(--b, #F4DCBF);
-  
-        p {
-          --b: #30383F;
-          margin: var(--m, 200 0);
-          padding: var(--p, 200);
-          position: fixed;
-  
-          +p {
-            width: 142;
-            height: 50;
-            --p: 0;
-            border-radius: var(--r, 50%);
-            border: 10px solid #556D7F;
-            --m: 155 120;
-  
-            +p {
-              width: 0;
-              height: 0;
-              --m: 140 0;
-              --p: 80 200;
-              --r: 0;
-              --b: radial-gradient(#0000 75px, #F4DCBF 0);
-              border: none;
-  
-              +p {
-                --p: 0;
-                --m: 6 156;
-                --b: none;
-                border: 44px solid#0000;
-                border-bottom: 150px solid#30383F;
-  
-                +p {
-                  border: none;
-                  --r: 5px;
-                  --p: 10 15;
-                  --b: #FBD038;
-                  --m: 210 185;
-                }
-              }
-            }
-          }
-        }
+<p><p><p>
+<style>
+* {
+  background: var(--b, #f4dcbf);
+  p {
+    --b: conic-gradient(from 164deg, #30383f 32deg, transparent 0);
+    padding: 150;
+    margin: -110;
+    + p {
+      border-radius: var(--r, 50%);
+      padding: 30 75;
+      --b: #30383f;
+      box-shadow:
+        inset 0 -25px #30383f,
+        inset 0 -35px #556d7f;
+      margin: 102 120 0 117;
+      + p {
+        --r: 5px;
+        --b: #fbd038;
+        padding: 10 15;
+        margin: -40 200 0 177;
+        box-shadow: 0 0;
       }
-    </style>
+    }
+  }
+}
+</style>
 </body>
 </html>

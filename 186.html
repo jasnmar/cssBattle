@@ -6,31 +6,35 @@
   <title>Document</title>
 </head>
 <body>
-  <p><p><p><p><p><style>
-  *{background:linear-gradient(90deg, #0000 160px, #E8112D 0 240px, #0000 0),linear-gradient(#fff 110px, #E8112D 0 190px, #fff 0);
-   *{background:linear-gradient(90deg, #0000 90px, #F9DD16 0 110px, #0000 0),linear-gradient(#0000 90px, #F9DD16 0 110px, #0000 0);
-    margin:50 100;
-    p{
-      position:fixed;
-      background:none;
-      border:20px solid #0000;
-      border-bottom:28px solid #F9DD16;
-      margin:167 80;
-      +p{
-        rotate:90deg;
-        margin:76 -11;
-        +p{
-          rotate:-90deg;
-          margin:76 171;
-          +p{
-            rotate:180deg;
-            margin:-15 80
-            
-          }
-        }
+ <dl><dl><dl><dl>
+<style>
+* {
+  --c: #e8112d;
+  --t: 110px;
+  --x: 190px;
+  --y: -90px;
+  background: conic-gradient(at 5em var(--t), transparent 25%, var(--c) 0 75%)
+    var(--y) 0 / 250px var(--x);
+  * {
+    font: 4px a;
+    --t: 104px;
+    --x: 124px;
+    --y: -145px;
+    --c: #f9dd16;
+    margin: 36 85;
+    dl {
+      position: fixed;
+      margin: 199 95;
+      border-color: transparent transparent #f9dd16;
+      border-width: 0px 20px 30px;
+      border-style: solid;
+      > dl {
+        rotate: 90deg;
+        margin: -100 -120;
       }
-      
-    }}}
+    }
+  }
+}
 </style>
 </body>
 </html>
